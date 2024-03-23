@@ -26,7 +26,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: cd ../../../ npm init -y
     - run: npm i socket.io@2.3.0
     - run: npm i express@4.18.3
     - run: npm ci
